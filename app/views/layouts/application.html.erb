@@ -12,8 +12,7 @@
 			<div class="container">
 		 		<a href="#" class="brand"> Fishing App</a>
 		 		<ul class="nav">
-		 			<li> <%= link_to "All Statuses", statuses_path %> </li>
-		 			<li> <%= link_to "Sign UP", new_user_registration_path %> </li>
+		 			<li> <%= link_to "All Statuses", feed_path %> </li>
 		 		</ul>
 		 		<ul class="nav pull-right">
 		 			<% if user_signed_in? %>
@@ -27,8 +26,8 @@
 		  					</ul>
 	  					</li>
 	  				<% else %>
-	  					<li> <%= link_to "Register", new_user_registration_path %> </li>
-	  					<li> <%= link_to "Log in", new_user_session_path %> </li>
+	  					<li> <%= link_to "Register", register_path %> </li>
+	  					<li> <%= link_to "Log in", login_path %> </li>
 
   					<% end %>
   				</ul>
