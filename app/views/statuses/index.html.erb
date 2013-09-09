@@ -3,7 +3,6 @@
 </div>
 
 <%= link_to "Post a New Status", new_status_path, class: "btn btn-success" %>
-<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
 
 <% @statuses.each do |status| %>
   <div class="status">
