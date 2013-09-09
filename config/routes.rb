@@ -1,11 +1,12 @@
 Fishingapp::Application.routes.draw do
+  #root to: 'devise/sessions#new'
   devise_for :users
 
   resources :statuses
   get 'feed', to: 'statuses#index', as: :feed
-  root to: 'devise/sessions#new'
 
   devise_scope :user do
+    root :to => 'devise/sessions#new'
     get 'register', :to => 'devise/registrations#new', as: :register
     get 'login', :to => 'devise/sessions#new', as: :login
     get 'logout', :to => 'devise/sessions#destroy', as: :logout
