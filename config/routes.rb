@@ -1,4 +1,6 @@
 Fishingapp::Application.routes.draw do
+  get "profiles/show"
+
   #root to: 'devise/sessions#new'
   devise_for :users
 
