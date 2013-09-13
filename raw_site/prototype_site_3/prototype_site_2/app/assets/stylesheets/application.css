@@ -12,18 +12,4 @@
  *= require_tree .
  */
 
-body { padding-top: 70px; }
-
-.simple_form_register {
-	margin: 0 auto;
-	width: 300px;
-}
-
-.simple_form_register input {
-	width: 286px;
-	height: 45px;
-}
-
-.simple_form_register div > input{
-	height: 34px;
-}
+ body { padding-top: 70px; }

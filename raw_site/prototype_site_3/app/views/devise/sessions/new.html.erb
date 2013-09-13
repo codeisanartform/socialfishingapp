@@ -1,24 +1,24 @@
 <div class="row">
-	<div class="span8">
-		<h2>Signing in is easy &amp; secure</h2>
-	</div>
+	<%= link_to "Cancel", cancel_user_registration_path %>
 	<div class="span4">
 		<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well"}) do |f| %>
 
 		  <fieldset>
 		  	<legend> Sign In</legend>
-			  	<%= f.input :email %>
-			  	<%= f.input :password %>
+			  <%= f.input :email %>
+			  <%= f.input :password %>
 
-			  	<% if devise_mapping.rememberable? -%>
+			  <% if devise_mapping.rememberable? -%>
 			    <div><%= f.input :remember_me, as: :boolean %></div>
-			 	<% end -%>
+			  <% end -%>
 
-			 	<div><%= f.button :submit, "Sign in", {class: "btn-success"} %></div>
-
-				<div style="margin:30px 0;"><%= render "devise/shared/links" %></div>
+			  <div><%= f.button :submit, "Sign in", {class: "btn-success"} %></div>
 		  </fieldset>
 		<% end %>
+		<%= render "devise/shared/links" %>
+	</div>
+	<div class="span8">
+		<h2>Signing in is easy &amp; secure :) </h2>
 	</div>
 </div>
 
