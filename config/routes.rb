@@ -1,5 +1,4 @@
 Fishingapp::Application.routes.draw do
-  get "profiles/show"
 
   #root to: 'devise/sessions#new'
   devise_for :users
@@ -8,12 +7,14 @@ Fishingapp::Application.routes.draw do
   get 'feed', to: 'statuses#index', as: :feed
 
   devise_scope :user do
-    root :to => 'devise/sessions#new'
+    root :to => 'statuses#index'
     get 'register', :to => 'devise/registrations#new', as: :register
     get 'login', :to => 'devise/sessions#new', as: :login
     get 'logout', :to => 'devise/sessions#destroy', as: :logout
   end
 
+  get "profiles/show"
+  get '/:id', to: 'profiles#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -18,10 +18,9 @@ class CustomRoutesTest < ActionDispatch::IntegrationTest
   	assert_response :success
   end
 
-  #test "that /feed route opens the all statuses page"  do
-  #	get '/logout'
-  #	assert_response :redirect
-  #	assert_redirected_to '/'
-  #end
+  test "that a profile page works"  do
+    get '/RubyRockstar'
+    assert_response :success
+  end
 
 end
