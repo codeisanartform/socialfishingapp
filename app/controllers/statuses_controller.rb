@@ -37,7 +37,7 @@ class StatusesController < ApplicationController
 
   # GET /statuses/1/edit
   def edit
-    @status = Status.find(params[:id])
+    @status = current_user.statuses.find(params[:id])
   end
 
   # POST /statuses

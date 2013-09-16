@@ -9,6 +9,13 @@ gem 'devise'
 
 gem 'simple_form'
 
+group :test do
+	gem 'shoulda'
+	gem 'shoulda-context'
+	gem 'rspec-rails'
+  	gem 'shoulda-matchers'
+end
+
 group :development, :test do
 	gem 'sqlite3'
 end
