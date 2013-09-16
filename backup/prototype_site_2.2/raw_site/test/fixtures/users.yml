@@ -1,0 +1,11 @@
+brad:
+  first_name: "Brad"
+  last_name: "Beltowski"
+  email: "brad@test.com"
+  profile_name: "RubyRockstar"
+
+jack:
+  first_name: "Jack"
+  last_name: "White"
+  email: "jack@test.com"
+  profile_name: "RealRockstar"

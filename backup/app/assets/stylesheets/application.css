@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body { padding-top: 70px; }
+
+
+.simple_form_register {
+	margin: 0 auto;
+	width: 300px;
+}
+
+.simple_form_register input {
+	height: 45px;
+}
+
+form[class="simple_form form-signin simple_form_register"] > input[type="submit"] {
+	width: 315px;
+}
+
+form[class="simple_form form-signin simple_form_register"] > a {
+	background: red;
+}
+
+.form-group * {
+	max-width: 300px;
+	min-width: 300px;
+}
+
+.simple_form_register div > input{
+	height: 34px;
+}
+
+.nav_list {
+	line-height: 30px;
+	height: 30px;
+}
+
+#footer {
+	margin: 20px 0;
+	/*padding: 15px 0;*/
+	height: 50px;
+	line-height: 50px;
+	background: #F5F5F5;
+}
+
+#error_explanation {
+	margin-bottom: 30px;
+	background: #CD433D;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+
+#error_explanation h2 {
+	font-size: 18px;
+	/*color: red;*/
+	padding-left: 5px;
+	color: #e0e0e0;
+}
+
+#error_explanation ul {
+	padding-bottom: 10px;
+}
+
+#error_explanation li {
+	/*margin: 0;*/
+	color: #e0e0e0;
+	margin-top: -10px;
+	/*line-height: 0;*/
+}
+
+
